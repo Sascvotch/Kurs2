@@ -1,13 +1,13 @@
-package sky.pro.Kyrs2;
+package sky.pro.kyrs2;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import sky.pro.Kyrs2.data.Question;
-import sky.pro.Kyrs2.services.impl.ExaminerServiceImpl;
-import sky.pro.Kyrs2.services.impl.JavaQuestionService;
+import sky.pro.kyrs2.data.Question;
+import sky.pro.kyrs2.services.impl.ExaminerServiceImpl;
+import sky.pro.kyrs2.services.impl.JavaQuestionService;
 
 import java.util.*;
 
@@ -22,7 +22,7 @@ public class ExaminerServiceTest {
     @InjectMocks
     private ExaminerServiceImpl out;
 
-    private final Collection<Question> questionList = new ArrayList<>(Arrays.asList(
+    private final Collection<Question> questionList = new HashSet<>(Set.of(
             new Question("Вопрос2", "Ответ2")
     ));
     private final Question question = new Question("Вопрос2", "Ответ2");
