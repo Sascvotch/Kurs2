@@ -79,15 +79,9 @@ public class JavaQuestionService implements QuestionService {
 
     public Question getRandomQuestion() {
         List<Question> questionList = questionSet.stream()
-                // .map(e -> e..getValue())
                 .collect(Collectors.toList());
         int nxt = ran.nextInt(questionSet.size());
         return questionList.get(nxt);
     }
 
-    //  public static class MyException extends Exception {
-    //      public MyException(String message) {
-    //          super(message);
-    //      }
-    //  }
 }
