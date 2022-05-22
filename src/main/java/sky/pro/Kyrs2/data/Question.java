@@ -1,5 +1,4 @@
 package sky.pro.Kyrs2.data;
-
 import java.util.Objects;
 
 public class Question {

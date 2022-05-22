@@ -78,11 +78,13 @@ public class JavaQuestionService implements QuestionService {
         int nxt = ran.nextInt(questionMap.size());
         return questionList.get(nxt);
     }
+
     public void EmployeeAlreadyExists(Map questionMap, Question currentQuestion) {
         if (questionMap.containsKey(currentQuestion.getQuestion() + currentQuestion.getAnswer())) {
             throw new QuestionAlreadyExist();
         }
     }
+
     public static class MyException extends Exception {
         public MyException(String message) {
             super(message);

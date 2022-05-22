@@ -9,10 +9,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.junit.jupiter.MockitoExtension;
 import sky.pro.Kyrs2.data.Question;
 import sky.pro.Kyrs2.services.impl.JavaQuestionService;
-
 import java.util.*;
 import java.util.stream.Stream;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)

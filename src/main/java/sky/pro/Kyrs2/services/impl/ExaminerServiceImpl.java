@@ -5,7 +5,6 @@ import sky.pro.Kyrs2.exception.InvalidArgumentException;
 import sky.pro.Kyrs2.data.Question;
 import sky.pro.Kyrs2.services.QuestionService;
 import sky.pro.Kyrs2.services.ExaminerService;
-
 import java.util.ArrayList;
 import java.util.Collection;
 

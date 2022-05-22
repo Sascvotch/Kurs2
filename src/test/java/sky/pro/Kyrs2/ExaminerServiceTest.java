@@ -8,9 +8,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import sky.pro.Kyrs2.data.Question;
 import sky.pro.Kyrs2.services.impl.ExaminerServiceImpl;
 import sky.pro.Kyrs2.services.impl.JavaQuestionService;
-
 import java.util.*;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 

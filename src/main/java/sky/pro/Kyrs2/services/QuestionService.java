@@ -3,7 +3,6 @@ package sky.pro.Kyrs2.services;
 import org.springframework.stereotype.Service;
 import sky.pro.Kyrs2.services.impl.JavaQuestionService;
 import sky.pro.Kyrs2.data.Question;
-
 import java.util.Collection;
 
 @Service

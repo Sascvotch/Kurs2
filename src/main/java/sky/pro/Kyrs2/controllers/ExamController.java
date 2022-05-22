@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import sky.pro.Kyrs2.services.ExaminerService;
 import sky.pro.Kyrs2.data.Question;
-
 import java.util.Collection;
 
 @RestController
