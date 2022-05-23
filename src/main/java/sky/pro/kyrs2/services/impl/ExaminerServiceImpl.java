@@ -22,11 +22,9 @@ public class ExaminerServiceImpl implements ExaminerService {
             throw new InvalidArgumentException();
         }
         Collection<Question> getQuestion = new HashSet<>();
-        int i = 0;
-        while (i < amount) {
+        while (getQuestion.size() < amount) {
             Question question = questionService.getRandomQuestion();
             getQuestion.add(question);
-            i++;
         }
         System.out.println(getQuestion);
         return getQuestion;

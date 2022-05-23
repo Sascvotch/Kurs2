@@ -20,21 +20,17 @@ public class JavaQuestionService implements QuestionService {
     ));
     private final Random ran = new Random();
 
+    public int size() {
+        return questionSet.size();
+    }
+
     public Question add(String question, String answer) {
+       Question questionAdd=new Question(question,answer);
         if (question == null || answer == null) {
             throw new InvalidArgumentException();
         }
-        Question questionAdd = new Question(question, answer);
-        if (questionSet.contains(questionAdd)) {
-            throw new QuestionAlreadyExistException();
-        }
-        questionSet.add(questionAdd);
-        System.out.println("Вопрос1: " + question + " с ответом: " + answer + " добавлен.");
+        add(questionAdd);
         return questionAdd;
-    }
-
-    public int size() {
-        return questionSet.size();
     }
 
     public Question add(Question question) {
