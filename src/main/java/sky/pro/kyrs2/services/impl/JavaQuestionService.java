@@ -25,18 +25,23 @@ public class JavaQuestionService implements QuestionService {
     }
 
     public Question add(String question, String answer) {
-       Question questionAdd=new Question(question,answer);
+        Question questionAdd = new Question(question, answer);
         if (question == null || answer == null) {
             throw new InvalidArgumentException();
         }
-        add(questionAdd);
-        return questionAdd;
+
+        return addQuestion(questionAdd);
     }
 
     public Question add(Question question) {
         if (question == null) {
             throw new InvalidArgumentException();
         }
+      //  addQuestion(question);
+        return addQuestion(question);
+    }
+
+    private Question addQuestion(Question question) {
         if (questionSet.contains(question)) {
             throw new QuestionAlreadyExistException();
         }
